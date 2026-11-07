@@ -9,7 +9,7 @@
 <header><img src="icon.png" alt=""><div><h1>Datenschutzerklärung</h1><p class="tagline">Star Spot Finder · iPhone, iPad, Mac</p></div></header>
 <nav><a href="index.html">Star Spot Finder</a><a href="impressum.html">Impressum</a><a href="support.html">Support</a><a href="#en">English</a></nav>
 
-<p class="muted">Stand: 2. November 2026</p>
+<p class="muted">Stand: 6. November 2026</p>
 
 <div class="card">
 <h2>Kurz gesagt</h2>
@@ -32,13 +32,21 @@ E-Mail: wavpixels@gmail.com</p>
 <ul>
 <li><b>Eigene Plätze, Messwerte und Einstellungen</b> speichert die App nur lokal auf deinem Gerät. Sie werden nicht
 hochgeladen. Löschst du die App, sind sie gelöscht.</li>
-<li><b>Zwischenspeicher:</b> Unterkunftsdaten aus OpenStreetMap hält die App bis zu 7 Tage, Kandidaten und geprüfte
-Umgebungen des Platz-Finders bis zu 30 Tage, Wettervorhersagen bis zu 30 Minuten auf dem Gerät, damit sie nicht jedes Mal
-neu geladen werden müssen.</li>
+<li><b>Zwischenspeicher:</b> Unterkunftsdaten, die die App bei 21,0 oder 21,3 aus OpenStreetMap abfragt, hält sie bis
+zu 7 Tage, Wettervorhersagen bis zu 30 Minuten auf dem Gerät, damit sie nicht jedes Mal neu geladen werden müssen. Der
+Platz-Finder arbeitet nur mit den mitgelieferten Daten.</li>
 <li><b>Standort:</b> Die App fragt deinen Standort nur ab, wenn du eine Funktion dafür auswählst (z. B. den
 Ortungsknopf oder „Mein Standort als Start“), und nur mit deiner Erlaubnis („beim Verwenden der App“). Er dient dazu,
 die Karte dort zu zeigen und Wetter, Vergleiche oder Routen für diese Stelle zu berechnen. Die App speichert keinen
 Standortverlauf.</li>
+<li><b>Mitteilungen</b> (Neumondwoche, beste Nacht der Woche, eigene Plätze) sind ab Werk aus. Schaltest du sie ein,
+plant die App sie <b>lokal auf deinem Gerät</b> – es gibt keinen Push-Server und kein Konto. Ist die Art „Beste Nacht“
+eingeschaltet, fragt die App beim Öffnen und alle paar Stunden, solange sie offen ist, die Vorhersage bei Open-Meteo für
+deinen gemerkten groben Standort (etwa 1 km) und die Koordinaten deiner gespeicherten Plätze ab – dieselbe Abfrage wie im
+Finder unter „Wetter“. Nur für die Art „Eigene Plätze“ fragt die App außerdem einige Male am Tag, auch im Hintergrund,
+die Wettervorhersage bei Open-Meteo ab, und zwar allein mit den Koordinaten deiner gespeicherten Plätze (ohne Namen);
+schaltest du die Arten aus, enden diese Abfragen. Welche Mitteilungen schon zugestellt wurden, merkt sich die App 60 Tage
+auf dem Gerät, damit nichts doppelt kommt.</li>
 </ul>
 
 <h2>3. Dienste, die die App direkt anfragt</h2>
@@ -46,21 +54,24 @@ Standortverlauf.</li>
 technisch notwendig deine <b>IP-Adresse</b> sowie die <b>Koordinaten bzw. der Kartenausschnitt</b>, für die du etwas
 abfragst – keine Namen, keine Kennungen deines Geräts. Ich erhalte von diesen Anfragen nichts.</p>
 <ul>
-<li><b>Apple Karten</b> (Apple) – Karte, Luftbild, Globus und 3D, Ortssuche, Ortsnamen sowie Routen mit Auto und zu
-Fuß. Es gilt die <a href="https://www.apple.com/legal/privacy/">Datenschutzrichtlinie von Apple</a>.</li>
+<li><b>Apple Karten</b> (Apple) – Karte, Luftbild, Globus und 3D, Ortssuche, Ortsnamen sowie Routen mit Auto, Rad und
+zu Fuß. Es gilt die <a href="https://www.apple.com/legal/privacy/">Datenschutzrichtlinie von Apple</a>.</li>
 <li><b>Open-Meteo</b> (Schweiz) – Wettervorhersage, Seeing und Aerosole für den gewählten Ort (beim Start für die
-Kartenmitte); im Assistenten für Zeiten jenseits der Vorhersage das Wetter derselben Tage früherer Jahre.
-<a href="https://open-meteo.com/en/terms">Bedingungen</a></li>
-<li><b>Overpass API</b> (OpenStreetMap-Daten) – Unterkünfte, Platz-Finder und Beobachtungsplätze: zuerst
+Kartenmitte); im Assistenten für Zeiten jenseits der Vorhersage das Wetter derselben Tage früherer Jahre. Ist die
+Mitteilung „Beste Nacht“ eingeschaltet, beim Öffnen und alle paar Stunden die Vorhersage für deinen groben Standort und
+deine eigenen Plätze; ist die Mitteilung „Eigene Plätze“ eingeschaltet, zusätzlich einige Male am Tag im Hintergrund die
+Wolken- und Regenvorhersage für die Koordinaten deiner eigenen Plätze. <a href="https://open-meteo.com/en/terms">Bedingungen</a></li>
+<li><b>Overpass API</b> (OpenStreetMap-Daten) – nur Unterkünfte unter hellerem Himmel, wenn du 21,0 oder 21,3 als
+Mindestwert wählst (ab 21,6 sind sie mitgeliefert, ebenso Platz-Finder und Beobachtungsorte): zuerst
 overpass-api.de (FOSSGIS e.V., Deutschland), bei Ausfall overpass.private.coffee bzw. overpass.kumi.systems
 (Österreich).</li>
-<li><b>FOSSGIS-Routing</b> (routing.openstreetmap.de, FOSSGIS e.V., Deutschland) – Radrouten und Fahrzeit-Umkreis.</li>
+<li><b>FOSSGIS-Routing</b> (routing.openstreetmap.de, FOSSGIS e.V., Deutschland) – Fahrzeit-Umkreis und Radrouten, wo
+Apple Karten keine kennt.</li>
 <li><b>NASA GIBS</b> (USA) – Satelliten-Nachtbilder für die Datenebene „Lichtquellen“.</li>
 <li><b>Amazon Web Services</b> (USA) – Höhendaten (Terrain Tiles) für Bodenansicht, Horizont und Platz-Finder.</li>
 <li><b>EOX IT Services</b> (Österreich) – Satellitenbild der Bodenansicht.</li>
-<li><b>Wikidata</b> (Wikimedia Foundation, USA) – Kontaktdaten mancher Berghütten.</li>
-<li><b>GeoJS</b> – ungefährer Standort aus der IP-Adresse, <b>nur</b> wenn du das ausdrücklich wählst (wenn die
-genaue Ortung nicht verfügbar ist).</li>
+<li><b>Wikidata</b> (Wikimedia Foundation, USA) – Kontaktdaten mancher Berghütten, nur beim Öffnen einer Unterkunft,
+die bei 21,0 oder 21,3 aus OpenStreetMap kam (für die mitgelieferten Unterkünfte sind sie schon in der App).</li>
 </ul>
 <p>Bei Anbietern in den USA kann deine IP-Adresse dorthin übermittelt werden. Rechtsgrundlage für alle Anfragen ist,
 dass du die jeweilige Funktion nutzt (Art. 6 Abs. 1 lit. b bzw. f DSGVO); ohne die Anfrage könnte die App die gewünschte
@@ -86,7 +97,7 @@ veröffentlichte Fassung.</p>
 <hr id="en">
 
 <h1>Privacy policy</h1>
-<p class="muted">Last updated: 2 November 2026</p>
+<p class="muted">Last updated: 6 November 2026</p>
 
 <div class="card">
 <h2>In short</h2>
@@ -108,12 +119,20 @@ Email: wavpixels@gmail.com</p>
 <ul>
 <li><b>Your spots, measurements and settings</b> are stored only locally on your device and are never uploaded.
 Deleting the app deletes them.</li>
-<li><b>Caches:</b> places to stay from OpenStreetMap are kept for up to 7 days, candidates and checked surroundings of
-the spot finder for up to 30 days, weather forecasts for up to 30 minutes, so they do not have to be downloaded every
-time.</li>
+<li><b>Caches:</b> places to stay that the app requests from OpenStreetMap at 21.0 or 21.3 are kept for up to 7 days,
+weather forecasts for up to 30 minutes, so they do not have to be downloaded every time. The spot finder works only with
+the built-in data.</li>
 <li><b>Location:</b> the app only reads your location when you use a feature for it (e.g. the locate button or “My
 location as start”) and only with your permission (“while using the app”). It is used to show the map there and to
 compute weather, comparisons or routes for that place. The app keeps no location history.</li>
+<li><b>Notifications</b> (new-moon week, best night of the week, your spots) are off by default. If you switch them on,
+the app plans them <b>locally on your device</b> – there is no push server and no account. With the kind “Best night”
+switched on, the app requests the forecast from Open-Meteo for your remembered rough location (about 1 km) and the
+coordinates of your saved spots when you open it and every few hours while it is open – the same request as in the finder
+under “Weather”. Only for the kind “Your spots” does the app additionally request the weather forecast from Open-Meteo a
+few times a day, also in the background, and then solely with the coordinates of your saved spots (no names); switch
+these kinds off and the requests stop. Which notifications have already been delivered is kept on the device for 60 days
+so nothing arrives twice.</li>
 </ul>
 
 <h2>3. Services the app contacts directly</h2>
@@ -121,20 +140,23 @@ compute weather, comparisons or routes for that place. The app keeps no location
 <b>IP address</b> and the <b>coordinates or map area</b> you ask about – no names, no device identifiers. I receive
 nothing from these requests.</p>
 <ul>
-<li><b>Apple Maps</b> (Apple) – map, imagery, globe and 3D, place search, place names, and car and walking routes.
+<li><b>Apple Maps</b> (Apple) – map, imagery, globe and 3D, place search, place names, and car, bike and walking routes.
 <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</li>
 <li><b>Open-Meteo</b> (Switzerland) – weather forecast, seeing and aerosols for the chosen place (at start for the map
-centre); in the assistant, for times beyond the forecast, the weather of the same days in past years.
-<a href="https://open-meteo.com/en/terms">Terms</a></li>
-<li><b>Overpass API</b> (OpenStreetMap data) – places to stay, spot finder and observing sites: first overpass-api.de
+centre); in the assistant, for times beyond the forecast, the weather of the same days in past years. If the “Best
+night” notification is switched on, the forecast for your rough location and your own spots when you open the app and
+every few hours; if the “Your spots” notification is switched on, additionally the cloud and rain forecast for the
+coordinates of your own spots, a few times a day in the background. <a href="https://open-meteo.com/en/terms">Terms</a></li>
+<li><b>Overpass API</b> (OpenStreetMap data) – only places to stay under brighter skies when you choose 21.0 or 21.3 as
+the minimum (from 21.6 they are built in, as are the spot finder and observing sites): first overpass-api.de
 (FOSSGIS e.V., Germany), if unavailable overpass.private.coffee or overpass.kumi.systems (Austria).</li>
-<li><b>FOSSGIS routing</b> (routing.openstreetmap.de, FOSSGIS e.V., Germany) – bike routes and driving range.</li>
+<li><b>FOSSGIS routing</b> (routing.openstreetmap.de, FOSSGIS e.V., Germany) – driving range, and bike routes where
+Apple Maps knows none.</li>
 <li><b>NASA GIBS</b> (USA) – nightly satellite images for the “light sources” layer.</li>
 <li><b>Amazon Web Services</b> (USA) – elevation data (Terrain Tiles) for the ground view, horizon and spot finder.</li>
 <li><b>EOX IT Services</b> (Austria) – satellite image of the ground view.</li>
-<li><b>Wikidata</b> (Wikimedia Foundation, USA) – contact details of some mountain huts.</li>
-<li><b>GeoJS</b> – approximate location from your IP address, <b>only</b> if you explicitly choose it (when precise
-location is not available).</li>
+<li><b>Wikidata</b> (Wikimedia Foundation, USA) – contact details of some mountain huts, only when you open a place to
+stay that came from OpenStreetMap at 21.0 or 21.3 (for the built-in places to stay they are already in the app).</li>
 </ul>
 <p>With providers in the USA, your IP address may be transferred there. The legal basis for all requests is that you use
 the respective feature (Art. 6(1)(b) or (f) GDPR); without the request the app could not show the information.</p>
