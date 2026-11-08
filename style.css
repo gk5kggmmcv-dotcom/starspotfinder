@@ -56,3 +56,18 @@ footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
 footer a { color: var(--muted); }
 @media (min-width: 700px) { .hero { grid-template-columns: 1.3fr 1fr; } .hero img.shot { justify-self: end; } }
 @media (max-width: 480px) { main { padding: 28px 16px 56px; } h1 { font-size: 25px; } header img { width: 60px; height: 60px; border-radius: 14px; } .lead { font-size: 18px; } }
+/* Über mich (Session 9): Foto-Platzhalter, Name, Instagram, Astrofotos, Kaffee-Knopf */
+.about-card { text-align: center; padding-top: 22px; }
+.about-photo { width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 12px; object-fit: cover; }
+.about-photo.placeholder { display: grid; place-items: center; background: rgba(255,255,255,.05); border: 1px dashed rgba(255,255,255,.22); color: var(--muted); font-size: 13px; }
+.about-role { margin: 0; color: var(--muted); font-size: 15px; }
+.about-name { margin: 2px 0 10px; font-size: 28px; font-weight: 800; color: var(--accent); }
+.about-links { margin: 0 0 6px; }
+a.pill { display: inline-block; text-decoration: none; color: var(--text); font-size: 14.5px; font-weight: 600; padding: 7px 14px; border-radius: 999px; background: rgba(255,255,255,.07); border: 1px solid var(--line); }
+a.pill:hover { background: rgba(255,255,255,.13); }
+.astro-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.astro-grid figure { margin: 0; min-width: 0; }
+.astro-grid img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 12px; box-shadow: 0 0 0 1px rgba(255,255,255,.08); }
+.astro-grid figcaption { margin-top: 6px; font-size: 13px; line-height: 1.35; color: var(--muted); text-align: center; }
+a.coffee { display: inline-block; text-decoration: none; color: #1b1400; background: var(--accent); font-weight: 700; padding: 10px 18px; border-radius: 999px; }
+@media (max-width: 480px) { .astro-grid { gap: 6px; } .astro-grid figcaption { font-size: 12px; } }
