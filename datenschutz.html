@@ -35,8 +35,12 @@ E-Mail: wavpixels@gmail.com</p>
 
 <h2>2. Daten auf deinem Gerät</h2>
 <ul>
-<li><b>Eigene Plätze, Messwerte und Einstellungen</b> speichert die App nur lokal auf deinem Gerät. Sie werden nicht
-hochgeladen – außer einem Platz, den du ausdrücklich teilst (Abschnitt 3). Löschst du die App, sind sie gelöscht.</li>
+<li><b>Einstellungen</b> speichert die App nur lokal auf deinem Gerät.</li>
+<li><b>Eigene Plätze und Messwerte</b> liegen auf deinem Gerät und zusätzlich in deinem <b>privaten iCloud</b> (CloudKit,
+private Datenbank deines Apple-Kontos), damit sie auf deinen Geräten gleich sind und eine Neuinstallation überstehen. Sie
+zählen gegen deinen iCloud-Speicher; niemand sonst kann sie lesen, auch ich nicht, und sie werden nicht ausgewertet. Ohne
+iCloud-Anmeldung bleiben sie nur auf dem Gerät. Löschen: einzeln in der App oder alles unter Einstellungen › [dein Name] ›
+iCloud › Speicher verwalten › Star Spot Finder. Ein Platz, den du ausdrücklich teilst, ist zusätzlich öffentlich (Abschnitt 3).</li>
 <li><b>Zwischenspeicher:</b> Unterkunftsdaten, die die App bei 21,0 oder 21,3 aus OpenStreetMap abfragt, hält sie bis
 zu 7 Tage, Wettervorhersagen bis zu 30 Minuten auf dem Gerät, damit sie nicht jedes Mal neu geladen werden müssen. Der
 Platz-Finder arbeitet nur mit den mitgelieferten Daten. Bilder der Gemeinschaft hält die App als eigene, neu
@@ -143,8 +147,8 @@ Wolken- und Regenvorhersage für die Koordinaten deiner eigenen Plätze. <a href
 Mindestwert wählst (ab 21,6 sind sie mitgeliefert, ebenso Platz-Finder und Beobachtungsorte): zuerst
 overpass-api.de (FOSSGIS e.V., Deutschland), bei Ausfall overpass.private.coffee bzw. overpass.kumi.systems
 (Österreich).</li>
-<li><b>FOSSGIS-Routing</b> (routing.openstreetmap.de, FOSSGIS e.V., Deutschland) – Fahrzeit-Umkreis und Radrouten, wo
-Apple Karten keine kennt.</li>
+<li><b>FOSSGIS-Routing</b> (routing.openstreetmap.de, FOSSGIS e.V., Deutschland) – Radrouten, nur wo Apple Karten keine
+kennt. Den Fahrzeit-Umkreis rechnet die App selbst auf dem Gerät, ohne Anfrage.</li>
 <li><b>NASA GIBS</b> (USA) – Satelliten-Nachtbilder für die Datenebene „Lichtquellen“.</li>
 <li><b>Amazon Web Services</b> (USA) – Höhendaten (Terrain Tiles) für Bodenansicht, Horizont und Platz-Finder.</li>
 <li><b>EOX IT Services</b> (Österreich) – Satellitenbild der Bodenansicht.</li>
@@ -209,8 +213,12 @@ Email: wavpixels@gmail.com</p>
 
 <h2>2. Data on your device</h2>
 <ul>
-<li><b>Your spots, measurements and settings</b> are stored only locally on your device and are never uploaded –
-except a spot you explicitly share (section 3). Deleting the app deletes them.</li>
+<li><b>Settings</b> are stored only locally on your device.</li>
+<li><b>Your spots and measurements</b> are stored on your device and additionally in your <b>private iCloud</b> (CloudKit,
+the private database of your Apple account), so they are the same on your devices and survive a reinstall. They count
+against your iCloud storage; nobody else can read them, not even me, and they are not analysed. Without an iCloud sign-in
+they stay on the device only. Deleting: individually in the app, or everything under Settings › [your name] › iCloud ›
+Manage storage › Star Spot Finder. A spot you explicitly share is additionally public (section 3).</li>
 <li><b>Caches:</b> places to stay that the app requests from OpenStreetMap at 21.0 or 21.3 are kept for up to 7 days,
 weather forecasts for up to 30 minutes, so they do not have to be downloaded every time. The spot finder works only with
 the built-in data. Community photos are kept as the app’s own re-saved copy: previews for up to 3 days, large photos for
@@ -311,8 +319,8 @@ coordinates of your own spots, a few times a day in the background. <a href="htt
 <li><b>Overpass API</b> (OpenStreetMap data) – only places to stay under brighter skies when you choose 21.0 or 21.3 as
 the minimum (from 21.6 they are built in, as are the spot finder and observing sites): first overpass-api.de
 (FOSSGIS e.V., Germany), if unavailable overpass.private.coffee or overpass.kumi.systems (Austria).</li>
-<li><b>FOSSGIS routing</b> (routing.openstreetmap.de, FOSSGIS e.V., Germany) – driving range, and bike routes where
-Apple Maps knows none.</li>
+<li><b>FOSSGIS routing</b> (routing.openstreetmap.de, FOSSGIS e.V., Germany) – bike routes, only where Apple Maps knows
+none. The driving range is calculated by the app itself on the device, without any request.</li>
 <li><b>NASA GIBS</b> (USA) – nightly satellite images for the “light sources” layer.</li>
 <li><b>Amazon Web Services</b> (USA) – elevation data (Terrain Tiles) for the ground view, horizon and spot finder.</li>
 <li><b>EOX IT Services</b> (Austria) – satellite image of the ground view.</li>
